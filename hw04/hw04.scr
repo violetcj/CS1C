@@ -1,0 +1,75 @@
+Script started on Wed 23 Jun 2021 02:30:36 PM PDT
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/hw04[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/hw04 $[00m date
+Wed Jun 23 14:30:38 PDT 2021
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/hw04[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/hw04 $[00m ls -l
+total 396
+-rwxrwx--- 1 cs1c cs1c    217 Jun 18 23:21 [0m[01;32mdate.cpp[0m
+-rwxrwx--- 1 cs1c cs1c    513 Jun 18 23:21 [01;32mdate.h[0m
+-rw-rw-r-- 1 cs1c cs1c  34136 Jun 23 14:29 date.o
+-rwxrwx--- 1 cs1c cs1c   5896 Jun 23 14:24 [01;32memployee.cpp[0m
+-rwxrwx--- 1 cs1c cs1c   1504 Jun 19 00:15 [01;32memployee.h[0m
+-rw-rw-r-- 1 cs1c cs1c  91624 Jun 23 14:29 employee.o
+-rwxrwxr-x 1 cs1c cs1c 135224 Jun 23 14:29 [01;32mhw04[0m
+-rwxrwx--- 1 cs1c cs1c   2487 Jun 19 00:15 [01;32mhw04.cpp[0m
+-rw-rw-r-- 1 cs1c cs1c      0 Jun 23 14:30 hw04.scr
+-rw-rw-r-- 1 cs1c cs1c    563 Jun 23 14:29 Makefile
+-rwxrwx--- 1 cs1c cs1c   5088 Jun 23 14:23 [01;32mprogrammer.cpp[0m
+-rwxrwx--- 1 cs1c cs1c   1462 Jun 18 23:42 [01;32mprogrammer.h[0m
+-rw-rw-r-- 1 cs1c cs1c  90168 Jun 23 14:29 programmer.o
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/hw04[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/hw04 $[00m make all
+make: Nothing to be done for 'all'.
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/hw04[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/hw04 $[00m ls-l[K[K -l
+total 396
+-rwxrwx--- 1 cs1c cs1c    217 Jun 18 23:21 [0m[01;32mdate.cpp[0m
+-rwxrwx--- 1 cs1c cs1c    513 Jun 18 23:21 [01;32mdate.h[0m
+-rw-rw-r-- 1 cs1c cs1c  34136 Jun 23 14:29 date.o
+-rwxrwx--- 1 cs1c cs1c   5896 Jun 23 14:24 [01;32memployee.cpp[0m
+-rwxrwx--- 1 cs1c cs1c   1504 Jun 19 00:15 [01;32memployee.h[0m
+-rw-rw-r-- 1 cs1c cs1c  91624 Jun 23 14:29 employee.o
+-rwxrwxr-x 1 cs1c cs1c 135224 Jun 23 14:29 [01;32mhw04[0m
+-rwxrwx--- 1 cs1c cs1c   2487 Jun 19 00:15 [01;32mhw04.cpp[0m
+-rw-rw-r-- 1 cs1c cs1c      0 Jun 23 14:30 hw04.scr
+-rw-rw-r-- 1 cs1c cs1c    563 Jun 23 14:29 Makefile
+-rwxrwx--- 1 cs1c cs1c   5088 Jun 23 14:23 [01;32mprogrammer.cpp[0m
+-rwxrwx--- 1 cs1c cs1c   1462 Jun 18 23:42 [01;32mprogrammer.h[0m
+-rw-rw-r-- 1 cs1c cs1c  90168 Jun 23 14:29 programmer.o
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/hw04[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/hw04 $[00m ./hw04
+Demonstrating prompt 1: friend function:
+The two phone numbers are NOT the same!
+
+Demonstrating Prompt 2: Overloaded equality operator:
+Testing 'clientI' and 'clientII'
+The phone numbers are the same!
+
+Testing 'clientI' and 'clientIII'
+The phone numbers are NOT the same!
+
+Demonstrating prompt 3: Addition member function:
+Adding 'TESTER' to clientI. Before: 40
+The age has been increased by 5 years.
+Age: 45
+
+Demonstrating prompt 4: Overloaded addition operator:
+Adding TESTER to clientII. . .
+Before: 40
+After: 45
+
+Demonstrating prompt 5: Overloaded insertion and extraction operators:
+Name: CJ Carroll
+ID: Phone #(XXX-XXX-XXXX): Age: Gender: Job Title: Salary: Hire Date: 
+Month: Day: Year: 2570Name:                CJ
+ID:                  0
+Phone #:             703-703-1234
+Age:                 37
+Gender:              M
+Job Title:           Talk Show Host
+Salary:              $900000
+Hire Date:           12/25/2014
+
+
+End of program
+
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/hw04[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/hw04 $[00m exit
+exit
+
+Script done on Wed 23 Jun 2021 02:32:42 PM PDT
