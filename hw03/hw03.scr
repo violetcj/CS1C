@@ -1,0 +1,225 @@
+Script started on Wed 23 Jun 2021 01:59:53 PM PDT
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/hw03 $[00m date
+Wed Jun 23 13:59:55 PDT 2021
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/hw03 $[00m ls -l
+total 508
+-rwxrwx--- 1 cs1c cs1c    226 Jun 16 20:38 [0m[01;32mdate.cpp[0m
+-rwxrwx--- 1 cs1c cs1c    515 Jun 16 20:39 [01;32mdate.h[0m
+-rw-rw-r-- 1 cs1c cs1c  34136 Jun 23 13:27 date.o
+-rwxrwx--- 1 cs1c cs1c   5259 Jun 23 13:46 [01;32memployee.cpp[0m
+-rwxrwx--- 1 cs1c cs1c   1334 Jun 22 16:36 [01;32memployee.h[0m
+-rw-rw-r-- 1 cs1c cs1c  86736 Jun 23 13:27 employee.o
+-rwxrwxr-x 1 cs1c cs1c 159176 Jun 23 13:27 [01;32mhw03[0m
+-rwxrwx--- 1 cs1c cs1c   5306 Jun 21 13:44 [01;32mhw03.cpp[0m
+-rw-rw-r-- 1 cs1c cs1c      0 Jun 23 13:59 hw03.scr
+-rw-rw-r-- 1 cs1c cs1c    774 Jun 23 13:27 Makefile
+-rwxrwx--- 1 cs1c cs1c   4481 Jun 23 13:54 [01;32mprogrammer.cpp[0m
+-rwxrwx--- 1 cs1c cs1c   1356 Jun 16 21:43 [01;32mprogrammer.h[0m
+-rw-rw-r-- 1 cs1c cs1c  87152 Jun 23 13:27 programmer.o
+-rwxrwx--- 1 cs1c cs1c   3661 Jun 23 13:59 [01;32msoftwareArchitect.cpp[0m
+-rwxrwx--- 1 cs1c cs1c   1342 Jun 16 21:39 [01;32msoftwareArchitect.h[0m
+-rw-rw-r-- 1 cs1c cs1c  86136 Jun 23 13:27 softwareArchitect.o
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/hw03 $[00m make all
+g++ -std=c++14 -Wall -g -c employee.cpp -o employee.o
+g++ -std=c++14 -Wall -g -c programmer.cpp -o programmer.o
+g++ -std=c++14 -Wall -g -c softwareArchitect.cpp -o softwareArchitect.o
+g++ -std=c++14 -Wall -g hw03.cpp -o hw03 date.o employee.o programmer.o softwareArchitect.o
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/hw03 $[00m ls-l
+ls-l: command not found
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/hw03 $[00m ls -l
+total 508
+-rwxrwx--- 1 cs1c cs1c    226 Jun 16 20:38 [0m[01;32mdate.cpp[0m
+-rwxrwx--- 1 cs1c cs1c    515 Jun 16 20:39 [01;32mdate.h[0m
+-rw-rw-r-- 1 cs1c cs1c  34136 Jun 23 13:27 date.o
+-rwxrwx--- 1 cs1c cs1c   5259 Jun 23 13:46 [01;32memployee.cpp[0m
+-rwxrwx--- 1 cs1c cs1c   1334 Jun 22 16:36 [01;32memployee.h[0m
+-rw-rw-r-- 1 cs1c cs1c  86752 Jun 23 14:00 employee.o
+-rwxrwxr-x 1 cs1c cs1c 159224 Jun 23 14:00 [01;32mhw03[0m
+-rwxrwx--- 1 cs1c cs1c   5306 Jun 21 13:44 [01;32mhw03.cpp[0m
+-rw-rw-r-- 1 cs1c cs1c      0 Jun 23 13:59 hw03.scr
+-rw-rw-r-- 1 cs1c cs1c    774 Jun 23 13:27 Makefile
+-rwxrwx--- 1 cs1c cs1c   4481 Jun 23 13:54 [01;32mprogrammer.cpp[0m
+-rwxrwx--- 1 cs1c cs1c   1356 Jun 16 21:43 [01;32mprogrammer.h[0m
+-rw-rw-r-- 1 cs1c cs1c  87176 Jun 23 14:00 programmer.o
+-rwxrwx--- 1 cs1c cs1c   3661 Jun 23 13:59 [01;32msoftwareArchitect.cpp[0m
+-rwxrwx--- 1 cs1c cs1c   1342 Jun 16 21:39 [01;32msoftwareArchitect.h[0m
+-rw-rw-r-- 1 cs1c cs1c  86144 Jun 23 14:00 softwareArchitect.o
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/hw03 $[00m ./hw03
+Two CS1C Employee's Info: 
+
+First Employee info:
+Name:                Jimmy Fallon
+ID:                  12345
+Phone #:             949-555-1234
+Age:                 40
+Gender:              M
+Job Title:           Comedian
+Salary:              $100000
+Hire Date:           8/31/2014
+
+Second Employee Info: 
+Name:                James Corden
+ID:                  87654
+Phone #:             703-703-1234
+Age:                 37
+Gender:              M
+Job Title:           Talk Show Host
+Salary:              $900000
+Hire Date:           12/25/2014
+
+Two Programmer's Info: 
+
+First programmer info:
+Name:                Sam Software
+ID:                  54321
+Phone #:             819-123-4567
+Age:                 21
+Gender:              M
+Job Title:           Programmer
+Salary:              $223000
+Hire Date:           12/24/2011
+Department Number:   5432122
+Supervisor:          Joe Boss
+Raise(%):            4%
+C++ Knowledge:       Yes
+Java Knowledge:      No
+
+Second programmer info:
+Name:                Mary Coder
+ID:                  65432
+Phone #:             310-555-5555
+Age:                 28
+Gender:              F
+Job Title:           Programmer
+Salary:              $770123
+Hire Date:           2/8/2010
+Department Number:   6543222
+Supervisor:          Mary Leader
+Raise(%):            7%
+C++ Knowledge:       Yes
+Java Knowledge:      Yes
+
+Two Software Architect's Info:
+First Architect:
+Name:                Alex Arch
+ID:                  88888
+Phone #:             819-123-4444
+Age:                 31
+Gender:              M
+Job Title:           Architect
+Salary:              $323000
+Hire Date:           12/24/2009
+Department Number:   5434222
+Supervisor:          Big Boss
+Raise(%):            5%
+Years of Experience: 4 year(s)
+
+Second Architect:
+Name:                Sally Designer
+ID:                  87878
+Phone #:             310-555-8888
+Age:                 38
+Gender:              F
+Job Title:           Architect
+Salary:              $870123
+Hire Date:           2/8/2003
+Department Number:   654322
+Supervisor:          Big Boss
+Raise(%):            8%
+Years of Experience: 11 year(s)
+
+
+Initiating Changes on the employee#1. . . 
+Enter new name: James Corden            Katie     Stephen Colbert
+Enter new ID: 123456
+Enter new Phone Number(Enter in format XXX-XXX-XXXX): 310-555-5555
+Enter new age: 51
+Enter new gender(use m, f, or x): M m
+Enter new job title: Comedian
+Enter new salary: 70123
+Enter new hire date: 
+Month: 5
+Day: 8
+Year: 2015
+
+After changes on employee#1...
+Name:                Stephen Colbert
+ID:                  123456
+Phone #:             310-555-5555
+Age:                 51
+Gender:              m
+Job Title:           Comedian
+Salary:              $70123
+Hire Date:           5/8/2015
+
+
+Initiating changes on programmer#1. . .
+Enter new name: Mary Coder
+Enter new ID: 65432
+Enter new Phone Number(Enter in format XXX-XXX-XXXX): 310-555-5555
+Enter new age: 28
+Enter new gender(use m, f, or x): f
+Enter new job title: Programmer
+Enter new salary: 770123
+Enter new hire date: 
+Month: 12
+Day: 24
+Year: 2011  10
+Enter new Department #: 6543222
+Enter new Supervisor name: Mary Leader
+Enter new raise(%): 7
+C++ knowledge updated
+Java knowledge updated
+
+After changes on programmer#1...
+Name:                Mary Coder
+ID:                  65432
+Phone #:             310-555-5555
+Age:                 28
+Gender:              f
+Job Title:           Programmer
+Salary:              $770123
+Hire Date:           12/24/2010
+Department Number:   6543222
+Supervisor:          Mary Leader
+Raise(%):            7%
+C++ Knowledge:       No
+Java Knowledge:      Yes
+
+
+Initiating changes on architect#1. . .
+Enter new name: Sally Designer
+Enter new ID: 87878
+Enter new Phone Number(Enter in format XXX-XXX-XXXX): 310-555-8888
+Enter new age: 38
+Enter new gender(use m, f, or x): f
+Enter new job title: Architect
+Enter new salary: 870123
+Enter new hire date: 
+Month: 2
+Day: 8
+Year: 2003
+Enter new Department #: 6543422
+Enter new supervisor: Big Boss
+Enter new raise(%): 8
+Enter new experience(in years): 11
+
+After changes on architect#1...
+Name:                Sally Designer
+ID:                  87878
+Phone #:             310-555-8888
+Age:                 38
+Gender:              f
+Job Title:           Architect
+Salary:              $870123
+Hire Date:           2/8/2003
+Department Number:   6543422
+Supervisor:          Big Boss
+Raise(%):            8%
+Years of Experience: 11 year(s)
+
+
+End of Program]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/hw03 $[00m exit
+exit
+
+Script done on Wed 23 Jun 2021 02:06:50 PM PDT
