@@ -7,7 +7,7 @@ initialize all data members with values labled
 in the MIL
 ************************************************/
 programmer::programmer() 
-	: deptNum(" "), supervisor(" "), raise(0), cppId(false), javaId(false)
+	:deptNum(" "), supervisor(" "), raise(0), cppId(false), javaId(false)
 {
 }
 /**************************************************
@@ -23,8 +23,9 @@ post: initializes all data members of object type
       'programmer' and it's base class 'employee'
 	  data members
 ***************************************************/
-programmer::programmer(string userDeptNum,string userSupervisor, int userRaise, bool cpp, bool java) 
-	:employee(), deptNum(userDeptNum), supervisor(userSupervisor), raise(userRaise), cppId(cpp), javaId(java)
+programmer::programmer(string userNam, int userId, string userPhoneNum, int userAge, char userGender, string userJobTitle, int userSalary, int userMonth, int userDay, int userYear, string userDeptNum,string userSupervisor, 
+			   int userRaise, bool cpp, bool java) : employee(userNam, userId, userPhoneNum, userAge, userGender, userJobTitle, userSalary, userMonth, userDay, userYear), 
+	deptNum(userDeptNum), supervisor(userSupervisor), raise(userRaise), cppId(cpp), javaId(java)
 {
 }
 /********************************************************************************

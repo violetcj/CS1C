@@ -28,10 +28,10 @@ int main() {
                        58, 'F', "News Reporter", 500500, 3, 1, 2005); //object with 'employee' class(non-default constructor)
 
     programmer clientIII;       //object with 'programmer' class(default constructor)
-    programmer clientIV(true);  //object with 'programmer' class(non-default constructor)
+    programmer clientIV("Sam Software", 54321, "819-123-4567", 21, 'M', "Programmer", 223000, 12, 24, 2011, "5432122", "Joe Boss", 4, true, false);  //object with 'programmer' class(non-default constructor)
 
     softwareArchitect clientV;        //object with 'softwareArchitect' class(default constructor)
-    softwareArchitect clientVI(true); //object with 'softwareArchitect' class(non-default constructor)
+    softwareArchitect clientVI("Alex Arch", 88888, "819-123-4444", 31, 'M', "Architect",323000, 12, 24, 2009, 5434222, "Big Boss", 5, 4); //object with 'softwareArchitect' class(non-default constructor)
      
     //printing inital info for clientI
     cout << "Two CS1C Employee's Info: \n\n"

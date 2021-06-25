@@ -1,4 +1,5 @@
-#pragma once
+#ifndef PROGRAMMER_H
+#define PROGRAMMER_H
 #include "employee.h"
 /************************************************************************
 programmer
@@ -35,8 +36,8 @@ public:
 
 	programmer(); //constructor
 
-	programmer(string userDeptNum,string userSupervisor, 
-			   int userRaise, bool cpp, bool java) : employee(string userNam, int userId, string userPhoneNum, int userAge, char userGender, string userJobTitle, int userSalary, int userMonth, int userDay, int userYear); //non-default constructor
+	programmer(string userNam, int userId, string userPhoneNum, int userAge, char userGender, string userJobTitle, int userSalary, int userMonth, int userDay, int userYear, string userDeptNum,string userSupervisor, 
+			   int userRaise, bool cpp, bool java) : employee(userNam, userId, userPhoneNum, userAge, userGender, userJobTitle, userSalary, userMonth, userDay, userYear){}; //non-default constructor
 /********************************************************************************
 printPro
 
@@ -115,3 +116,4 @@ private:
 	bool javaId;       //java identifier
 };
 
+#endif
