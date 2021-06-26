@@ -34,8 +34,8 @@ class softwareArchitect :
 public:
 
 	softwareArchitect();           //constructor
-	softwareArchitect(string userNam, int userId, string userPhoneNum, int userAge, char userGender, string userJobTitle, int userSalary, int userMonth, int userDay, int userYear, int userDeptNum,string userSupervisor, 
-			   int userRaise, int userExperience) : employee(userNam, userId, userPhoneNum, userAge, userGender, userJobTitle, userSalary, userMonth, userDay, userYear){};  //non-default constructor
+	softwareArchitect(string userNam, int userId, string userPhoneNum, int userAge, char userGender, string userJobTitle, 
+	int userSalary, int userMonth, int userDay, int userYear, int userDeptNum,string userSupervisor, int userRaise, int userExperience);  //non-default constructor
 
 /********************************************************************************
 softPrint

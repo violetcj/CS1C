@@ -36,8 +36,8 @@ public:
 
 	programmer(); //constructor
 
-	programmer(string userNam, int userId, string userPhoneNum, int userAge, char userGender, string userJobTitle, int userSalary, int userMonth, int userDay, int userYear, string userDeptNum,string userSupervisor, 
-			   int userRaise, bool cpp, bool java) : employee(userNam, userId, userPhoneNum, userAge, userGender, userJobTitle, userSalary, userMonth, userDay, userYear){}; //non-default constructor
+	programmer(string userNam, int userId, string userPhoneNum, int userAge, char userGender, string userJobTitle, int userSalary, 
+	int userMonth, int userDay, int userYear, string userDeptNum,string userSupervisor, int userRaise, bool cpp, bool java); //non-default constructor
 /********************************************************************************
 printPro
 

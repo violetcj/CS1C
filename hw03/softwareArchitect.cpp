@@ -17,8 +17,10 @@ when object is created with a bool parameter, will
 initalize all data members with values labeled in 
 the member initialization list
 ***************************************************/
-softwareArchitect::softwareArchitect(string userNam, int userId, string userPhoneNum, int userAge, char userGender, string userJobTitle, int userSalary, int userMonth, int userDay, int userYear, int userDeptNum,string userSupervisor, 
-			   int userRaise, int userExperience) : employee(userNam, userId, userPhoneNum, userAge, userGender, userJobTitle, userSalary, userMonth, userDay, userYear),
+softwareArchitect::softwareArchitect(string userNam, int userId, string userPhoneNum, int userAge, char userGender, string userJobTitle, 
+int userSalary, int userMonth, int userDay, int userYear, int userDeptNum,string userSupervisor, int userRaise, int userExperience) 
+	
+	: employee(userNam, userId, userPhoneNum, userAge, userGender, userJobTitle, userSalary, userMonth, userDay, userYear),
 	deptNum(userDeptNum), supervisor(userSupervisor), raise(userRaise), experience(userExperience)
 {
 }
