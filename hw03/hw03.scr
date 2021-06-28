@@ -1,75 +1,95 @@
-Script started on Wed 23 Jun 2021 01:59:53 PM PDT
-]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/hw03 $[00m date
-Wed Jun 23 13:59:55 PDT 2021
-]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/hw03 $[00m ls -l
-total 508
--rwxrwx--- 1 cs1c cs1c    226 Jun 16 20:38 [0m[01;32mdate.cpp[0m
--rwxrwx--- 1 cs1c cs1c    515 Jun 16 20:39 [01;32mdate.h[0m
--rw-rw-r-- 1 cs1c cs1c  34136 Jun 23 13:27 date.o
--rwxrwx--- 1 cs1c cs1c   5259 Jun 23 13:46 [01;32memployee.cpp[0m
--rwxrwx--- 1 cs1c cs1c   1334 Jun 22 16:36 [01;32memployee.h[0m
--rw-rw-r-- 1 cs1c cs1c  86736 Jun 23 13:27 employee.o
--rwxrwxr-x 1 cs1c cs1c 159176 Jun 23 13:27 [01;32mhw03[0m
--rwxrwx--- 1 cs1c cs1c   5306 Jun 21 13:44 [01;32mhw03.cpp[0m
--rw-rw-r-- 1 cs1c cs1c      0 Jun 23 13:59 hw03.scr
--rw-rw-r-- 1 cs1c cs1c    774 Jun 23 13:27 Makefile
--rwxrwx--- 1 cs1c cs1c   4481 Jun 23 13:54 [01;32mprogrammer.cpp[0m
--rwxrwx--- 1 cs1c cs1c   1356 Jun 16 21:43 [01;32mprogrammer.h[0m
--rw-rw-r-- 1 cs1c cs1c  87152 Jun 23 13:27 programmer.o
--rwxrwx--- 1 cs1c cs1c   3661 Jun 23 13:59 [01;32msoftwareArchitect.cpp[0m
--rwxrwx--- 1 cs1c cs1c   1342 Jun 16 21:39 [01;32msoftwareArchitect.h[0m
--rw-rw-r-- 1 cs1c cs1c  86136 Jun 23 13:27 softwareArchitect.o
-]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/hw03 $[00m make all
+Script started on Fri 25 Jun 2021 10:39:39 PM PDT
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/cs1crepo/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/cs1crepo/hw03 $[00m f[Kdate
+Fri Jun 25 22:39:42 PDT 2021
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/cs1crepo/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/cs1crepo/hw03 $[00m ls -l
+total 52
+-rw-r--r-- 1 cs1c cs1c  146 Jun 25 20:55 date.cpp
+-rw-r--r-- 1 cs1c cs1c  491 Jun 25 20:55 date.h
+-rw-r--r-- 1 cs1c cs1c 5071 Jun 25 20:55 employee.cpp
+-rw-r--r-- 1 cs1c cs1c 4095 Jun 25 20:55 employee.h
+-rw-r--r-- 1 cs1c cs1c 5505 Jun 25 20:55 hw03.cpp
+-rw-r--r-- 1 cs1c cs1c    0 Jun 25 22:39 hw03.scr
+-rw-r--r-- 1 cs1c cs1c  773 Jun 25 20:55 Makefile
+-rw-r--r-- 1 cs1c cs1c 4293 Jun 25 22:15 programmer.cpp
+-rw-r--r-- 1 cs1c cs1c 3548 Jun 25 22:09 programmer.h
+-rw-r--r-- 1 cs1c cs1c 3549 Jun 25 22:17 softwareArchitect.cpp
+-rw-r--r-- 1 cs1c cs1c 3187 Jun 25 22:19 softwareArchitect.h
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/cs1crepo/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/cs1crepo/hw03 $[00m make all
+g++ -std=c++14 -Wall -g -c date.cpp -o date.o
+In file included from [01m[Kdate.cpp:4:0[m[K:
+[01m[Kdate.h:[m[K In constructor ‘[01m[Kdate::date()[m[K’:
+[01m[Kdate.h:20:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdate::month[m[K’ will be initialized after [-Wreorder]
+     int month; //month of the date 
+[01;32m[K         ^[m[K
+[01m[Kdate.h:19:9:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kint date::day[m[K’ [-Wreorder]
+     int day;   //day of the date
+[01;32m[K         ^[m[K
+[01m[Kdate.cpp:7:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [-Wreorder]
+ date::date(): month(00), day(00), year(0000)
+[01;32m[K ^[m[K
 g++ -std=c++14 -Wall -g -c employee.cpp -o employee.o
 g++ -std=c++14 -Wall -g -c programmer.cpp -o programmer.o
 g++ -std=c++14 -Wall -g -c softwareArchitect.cpp -o softwareArchitect.o
 g++ -std=c++14 -Wall -g hw03.cpp -o hw03 date.o employee.o programmer.o softwareArchitect.o
-]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/hw03 $[00m ls-l
-ls-l: command not found
-]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/hw03 $[00m ls -l
-total 508
--rwxrwx--- 1 cs1c cs1c    226 Jun 16 20:38 [0m[01;32mdate.cpp[0m
--rwxrwx--- 1 cs1c cs1c    515 Jun 16 20:39 [01;32mdate.h[0m
--rw-rw-r-- 1 cs1c cs1c  34136 Jun 23 13:27 date.o
--rwxrwx--- 1 cs1c cs1c   5259 Jun 23 13:46 [01;32memployee.cpp[0m
--rwxrwx--- 1 cs1c cs1c   1334 Jun 22 16:36 [01;32memployee.h[0m
--rw-rw-r-- 1 cs1c cs1c  86752 Jun 23 14:00 employee.o
--rwxrwxr-x 1 cs1c cs1c 159224 Jun 23 14:00 [01;32mhw03[0m
--rwxrwx--- 1 cs1c cs1c   5306 Jun 21 13:44 [01;32mhw03.cpp[0m
--rw-rw-r-- 1 cs1c cs1c      0 Jun 23 13:59 hw03.scr
--rw-rw-r-- 1 cs1c cs1c    774 Jun 23 13:27 Makefile
--rwxrwx--- 1 cs1c cs1c   4481 Jun 23 13:54 [01;32mprogrammer.cpp[0m
--rwxrwx--- 1 cs1c cs1c   1356 Jun 16 21:43 [01;32mprogrammer.h[0m
--rw-rw-r-- 1 cs1c cs1c  87176 Jun 23 14:00 programmer.o
--rwxrwx--- 1 cs1c cs1c   3661 Jun 23 13:59 [01;32msoftwareArchitect.cpp[0m
--rwxrwx--- 1 cs1c cs1c   1342 Jun 16 21:39 [01;32msoftwareArchitect.h[0m
--rw-rw-r-- 1 cs1c cs1c  86144 Jun 23 14:00 softwareArchitect.o
-]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/hw03 $[00m ./hw03
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/cs1crepo/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/cs1crepo/hw03 $[00m ls -l
+total 512
+-rw-r--r-- 1 cs1c cs1c    146 Jun 25 20:55 date.cpp
+-rw-r--r-- 1 cs1c cs1c    491 Jun 25 20:55 date.h
+-rw-rw-r-- 1 cs1c cs1c  34144 Jun 25 22:40 date.o
+-rw-r--r-- 1 cs1c cs1c   5071 Jun 25 20:55 employee.cpp
+-rw-r--r-- 1 cs1c cs1c   4095 Jun 25 20:55 employee.h
+-rw-rw-r-- 1 cs1c cs1c  87792 Jun 25 22:40 employee.o
+-rwxrwxr-x 1 cs1c cs1c 161624 Jun 25 22:40 [0m[01;32mhw03[0m
+-rw-r--r-- 1 cs1c cs1c   5505 Jun 25 20:55 hw03.cpp
+-rw-r--r-- 1 cs1c cs1c      0 Jun 25 22:39 hw03.scr
+-rw-r--r-- 1 cs1c cs1c    773 Jun 25 20:55 Makefile
+-rw-r--r-- 1 cs1c cs1c   4293 Jun 25 22:15 programmer.cpp
+-rw-r--r-- 1 cs1c cs1c   3548 Jun 25 22:09 programmer.h
+-rw-rw-r-- 1 cs1c cs1c  88656 Jun 25 22:40 programmer.o
+-rw-r--r-- 1 cs1c cs1c   3549 Jun 25 22:17 softwareArchitect.cpp
+-rw-r--r-- 1 cs1c cs1c   3187 Jun 25 22:19 softwareArchitect.h
+-rw-rw-r-- 1 cs1c cs1c  87520 Jun 25 22:40 softwareArchitect.o
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/cs1crepo/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/cs1crepo/hw03 $[00m ./hw03
 Two CS1C Employee's Info: 
 
 First Employee info:
-Name:                Jimmy Fallon
-ID:                  12345
-Phone #:             949-555-1234
-Age:                 40
-Gender:              M
-Job Title:           Comedian
-Salary:              $100000
-Hire Date:           8/31/2014
+Name:                 
+ID:                  0
+Phone #:             000-000-0000
+Age:                 0
+Gender:               
+Job Title:            
+Salary:              $0
+Hire Date:           0/0/0
 
 Second Employee Info: 
-Name:                James Corden
-ID:                  87654
-Phone #:             703-703-1234
-Age:                 37
-Gender:              M
-Job Title:           Talk Show Host
-Salary:              $900000
-Hire Date:           12/25/2014
+Name:                Katie Couric
+ID:                  77777
+Phone #:             203-555-6789
+Age:                 58
+Gender:              F
+Job Title:           News Reporter
+Salary:              $500500
+Hire Date:           3/1/2005
 
 Two Programmer's Info: 
 
 First programmer info:
+Name:                 
+ID:                  0
+Phone #:             000-000-0000
+Age:                 0
+Gender:               
+Job Title:            
+Salary:              $0
+Hire Date:           0/0/0
+Department Number:    
+Supervisor:           
+Raise(%):            0%
+C++ Knowledge:       No
+Java Knowledge:      No
+
+Second programmer info:
 Name:                Sam Software
 ID:                  54321
 Phone #:             819-123-4567
@@ -84,23 +104,22 @@ Raise(%):            4%
 C++ Knowledge:       Yes
 Java Knowledge:      No
 
-Second programmer info:
-Name:                Mary Coder
-ID:                  65432
-Phone #:             310-555-5555
-Age:                 28
-Gender:              F
-Job Title:           Programmer
-Salary:              $770123
-Hire Date:           2/8/2010
-Department Number:   6543222
-Supervisor:          Mary Leader
-Raise(%):            7%
-C++ Knowledge:       Yes
-Java Knowledge:      Yes
-
 Two Software Architect's Info:
 First Architect:
+Name:                 
+ID:                  0
+Phone #:             000-000-0000
+Age:                 0
+Gender:               
+Job Title:            
+Salary:              $0
+Hire Date:           0/0/0
+Department Number:   0
+Supervisor:           
+Raise(%):            0%
+Years of Experience: 0 year(s)
+
+Second Architect:
 Name:                Alex Arch
 ID:                  88888
 Phone #:             819-123-4444
@@ -114,27 +133,13 @@ Supervisor:          Big Boss
 Raise(%):            5%
 Years of Experience: 4 year(s)
 
-Second Architect:
-Name:                Sally Designer
-ID:                  87878
-Phone #:             310-555-8888
-Age:                 38
-Gender:              F
-Job Title:           Architect
-Salary:              $870123
-Hire Date:           2/8/2003
-Department Number:   654322
-Supervisor:          Big Boss
-Raise(%):            8%
-Years of Experience: 11 year(s)
-
 
 Initiating Changes on the employee#1. . . 
-Enter new name: James Corden            Katie     Stephen Colbert
-Enter new ID: 123456
+Enter new name: Stephen Colbert
+Enter new ID: 123456  6
 Enter new Phone Number(Enter in format XXX-XXX-XXXX): 310-555-5555
 Enter new age: 51
-Enter new gender(use m, f, or x): M m
+Enter new gender(use m, f, or x): < M
 Enter new job title: Comedian
 Enter new salary: 70123
 Enter new hire date: 
@@ -144,27 +149,27 @@ Year: 2015
 
 After changes on employee#1...
 Name:                Stephen Colbert
-ID:                  123456
+ID:                  12346
 Phone #:             310-555-5555
 Age:                 51
-Gender:              m
+Gender:              M
 Job Title:           Comedian
 Salary:              $70123
 Hire Date:           5/8/2015
 
 
 Initiating changes on programmer#1. . .
-Enter new name: Mary Coder
-Enter new ID: 65432
+Enter new name: Mary VC  Coder
+Enter new ID: 6543222
 Enter new Phone Number(Enter in format XXX-XXX-XXXX): 310-555-5555
 Enter new age: 28
-Enter new gender(use m, f, or x): f
+Enter new gender(use m, f, or x): F
 Enter new job title: Programmer
 Enter new salary: 770123
 Enter new hire date: 
 Month: 12
 Day: 24
-Year: 2011  10
+Year: 2011
 Enter new Department #: 6543222
 Enter new Supervisor name: Mary Leader
 Enter new raise(%): 7
@@ -173,17 +178,17 @@ Java knowledge updated
 
 After changes on programmer#1...
 Name:                Mary Coder
-ID:                  65432
+ID:                  6543222
 Phone #:             310-555-5555
 Age:                 28
-Gender:              f
+Gender:              F
 Job Title:           Programmer
 Salary:              $770123
-Hire Date:           12/24/2010
+Hire Date:           12/24/2011
 Department Number:   6543222
 Supervisor:          Mary Leader
 Raise(%):            7%
-C++ Knowledge:       No
+C++ Knowledge:       Yes
 Java Knowledge:      Yes
 
 
@@ -192,7 +197,7 @@ Enter new name: Sally Designer
 Enter new ID: 87878
 Enter new Phone Number(Enter in format XXX-XXX-XXXX): 310-555-8888
 Enter new age: 38
-Enter new gender(use m, f, or x): f
+Enter new gender(use m, f, or x): F
 Enter new job title: Architect
 Enter new salary: 870123
 Enter new hire date: 
@@ -209,7 +214,7 @@ Name:                Sally Designer
 ID:                  87878
 Phone #:             310-555-8888
 Age:                 38
-Gender:              f
+Gender:              F
 Job Title:           Architect
 Salary:              $870123
 Hire Date:           2/8/2003
@@ -219,7 +224,7 @@ Raise(%):            8%
 Years of Experience: 11 year(s)
 
 
-End of Program]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/hw03 $[00m exit
+End of Program]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/cs1crepo/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/cs1crepo/hw03 $[00m exitr[K
 exit
 
-Script done on Wed 23 Jun 2021 02:06:50 PM PDT
+Script done on Fri 25 Jun 2021 10:44:03 PM PDT

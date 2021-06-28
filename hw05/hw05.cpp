@@ -42,29 +42,18 @@
 
 using namespace std;
 
-vector<int> Lottery(int range, int amount);
+/*********************************************************************************************************************
+vector<int> Lottery(int range, int amount)
 
-int main() {
+this function takes in two integers, one representing the range of what the numbers could be on a lottery card,
+and the other representing the amount of spots on the card. The function creates a temporary vector called 
+'temp' where its filled with each number in the range from 1-n. The random_shuffle is called to shuffle the elements,
+and then the size of the vector is cut to only contain the amount of spots the user entered. 
 
-    int range;
-    int amount; 
-    vector<int>winner; 
-
-    cout << "Enter Range of numbers: ";
-    cin >> range;
-    cout << "Enter amount of spots: ";
-    cin >> amount;
-
-    winner = Lottery(range, amount); 
-
-    for (vector<int>::iterator it = winner.begin(); it != winner.end(); it++) {
-        cerr << *it << endl; 
-    }
-
-    return 0; 
-}
-
-
+pre: 2 positive ints representing range of numbers and number of spots
+post: a vector int with a size of the 'amount' int containing that many values from the range of numbers given in
+      'range' int
+**********************************************************************************************************************/
 vector<int> Lottery(int range, int amount) {
 
     vector<int> temp;
@@ -81,5 +70,33 @@ vector<int> Lottery(int range, int amount) {
 
     return temp; 
 
+}
+   
+/****************************************************************************************************************************
+hw05
 
+The program represents a generator for a lottery's winning numbers. Using a vector, the user enters in the range of 
+numbers the lottery needs to be and the amount of spots on the card. The vector is then assigned random numbers with how 
+many spots the user specified and those numbers are within the range of the range the user specified. The vector's contents
+are then outputted to the screen to show which numbers are the winning numbers
+*****************************************************************************************************************************/
+int main() {
+
+    int range;         //IN: range of numbers
+    int amount;        //IN: amount of spots
+    vector<int>winner; //MID & OUT: contains winning numbers
+
+    cout << "Enter Range of numbers: ";
+    cin >> range;
+    cout << "Enter amount of spots: ";
+    cin >> amount;
+
+    winner = Lottery(range, amount); //function call
+    
+    cout << "Winning Numbers: " << endl; 
+    for (vector<int>::iterator it = winner.begin(); it != winner.end(); it++) {
+        cerr << *it << endl; 
+    }//outputs contents using an iterator
+
+    return 0; 
 }

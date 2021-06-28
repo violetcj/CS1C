@@ -14,7 +14,7 @@ using namespace std;
 int reverse
 
 This function is designed to take in a string, and two positive integers.
-(NOTE: string or integers are initialized through the program, not through
+(NOTE: string and integers are initialized through the program, not through
 the user)
 From the integer 'first' to the integer 'last' the substring in that range 
 is reversed using the std::swap() function. The function first checks to see 
