@@ -1,10 +1,19 @@
+/************************************************
+* Name: CJ Carroll
+* Assignment: HW07 - Pointers and Dynamic Arrays
+* Class: CS1C; M-Th 3:00 - 5:20 P.M.
+* Professor: John Kath
+**********************************************/
 #include "ManageInventory.h"
+
+using namespace inventory; 
 
 int main() {
 	
 	ManageInventory* inv;
-    ManageInventory* copyInv = nullptr;
+    ManageInventory* copyInv = NULL;
 
+    //adding inventory items to the inv object
     inv->addItem("Nike Basketball Shoes", 22, 145.99);
     inv->addItem("Under Armour T-Shirt", 33, 29.99);
     inv->addItem("Brooks Running Shoes", 11, 111.44);
@@ -15,11 +24,13 @@ int main() {
     inv->print();
     cout << endl;
 
+    //calling addToCart for each thing bought
     inv->addToCart(0, 2);
     inv->addToCart(1, 3);
     inv->addToCart(4, 4);
     inv->addToCart(2, 1);
 
+    //print receipt
     cout << "[Receipt]";
     inv->purchase();
     cout << endl;
