@@ -3,7 +3,7 @@
 int main() {
 	
 	ManageInventory* inv;
-    ManageInventory* copyInv = NULL;
+    ManageInventory* copyInv = nullptr;
 
     inv->addItem("Nike Basketball Shoes", 22, 145.99);
     inv->addItem("Under Armour T-Shirt", 33, 29.99);
