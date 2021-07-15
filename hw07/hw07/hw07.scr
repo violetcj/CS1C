@@ -1,0 +1,58 @@
+Script started on Thu 08 Jul 2021 11:17:29 PM PDT
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/CS1C/hw07/hw07[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/CS1C/hw07/hw07 $[00m date
+Thu Jul  8 23:17:31 PDT 2021
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/CS1C/hw07/hw07[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/CS1C/hw07/hw07 $[00m make a[K[K[K[K[K[Kls -l
+total 16
+-rw-r--r-- 1 cs1c cs1c 1337 Jul  8 23:14 hw07.cpp
+-rw-rw-r-- 1 cs1c cs1c    0 Jul  8 23:17 hw07.scr
+-rwxrwxrwx 1 cs1c cs1c  377 Jul  7 13:44 [0m[01;32mMakefile[0m
+-rw-r--r-- 1 cs1c cs1c 3598 Jul  8 23:10 ManageInventory.cpp
+-rw-r--r-- 1 cs1c cs1c 3011 Jul  8 23:15 ManageInventory.h
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/CS1C/hw07/hw07[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/CS1C/hw07/hw07 $[00m make all
+g++ -std=c++14 -Wall -g -c ManageInventory.cpp -o ManageInventory.o
+g++ -std=c++14 -Wall -g hw07.cpp -o hw07 ManageInventory.o
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/CS1C/hw07/hw07[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/CS1C/hw07/hw07 $[00m ls -l
+total 208
+-rwxrwxr-x 1 cs1c cs1c 96288 Jul  8 23:17 [0m[01;32mhw07[0m
+-rw-r--r-- 1 cs1c cs1c  1337 Jul  8 23:14 hw07.cpp
+-rw-rw-r-- 1 cs1c cs1c     0 Jul  8 23:17 hw07.scr
+-rwxrwxrwx 1 cs1c cs1c   377 Jul  7 13:44 [01;32mMakefile[0m
+-rw-r--r-- 1 cs1c cs1c  3598 Jul  8 23:10 ManageInventory.cpp
+-rw-r--r-- 1 cs1c cs1c  3011 Jul  8 23:15 ManageInventory.h
+-rw-rw-r-- 1 cs1c cs1c 98264 Jul  8 23:17 ManageInventory.o
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/CS1C/hw07/hw07[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/CS1C/hw07/hw07 $[00m ./hw07
+[Inventory After Initialization]
+Nike Basketball Shoes    : 22 @ $145.99
+Under Armour T-Shirt     : 33 @ $29.99
+Brooks Running Shoes     : 11 @ $111.44
+Asics Running Shoes      : 20 @ $165.88
+Nike Shorts              : 77 @ $45.77
+
+[Receipt]
+Nike Basketball Shoes     2 @ $145.99
+Under Armour T-Shirt      3 @ $29.99
+Brooks Running Shoes      1 @ $111.44
+Nike Shorts               4 @ $45.77
+
+SUBTOTAL: $333.19
+TAX:      $27.49
+TOTAL:    $360.68
+
+[Inventory After Purchase]
+Nike Basketball Shoes    : 20 @ $145.99
+Under Armour T-Shirt     : 30 @ $29.99
+Brooks Running Shoes     : 10 @ $111.44
+Asics Running Shoes      : 20 @ $165.88
+Nike Shorts              : 73 @ $45.77
+
+[Inventory After Copy]
+Nike Basketball Shoes    : 20 @ $145.99
+Under Armour T-Shirt     : 30 @ $29.99
+Brooks Running Shoes     : 10 @ $111.44
+Asics Running Shoes      : 20 @ $165.88
+Nike Shorts              : 73 @ $45.77
+
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/CS1C/hw07/hw07[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/CS1C/hw07/hw07 $[00m exit
+exit
+
+Script done on Thu 08 Jul 2021 11:17:58 PM PDT

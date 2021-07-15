@@ -298,11 +298,6 @@ int main()
         delete pi;            // [4.7] how are the values of ri, ri2, ri3 affected by delete statement?
         //ri is the only one affected when this delete is executed
 
-        cout << endl << "ri, ri2, ri3 after delete pi" << endl << endl;
-        cout << ri << endl;   // ri refers to *pi
-        cout << ri2 << endl;  // ri2 refers to *qi
-        cout << ri3 << endl;  // ri3 refers to qi
-
         delete[] ri3;        // [4.8] how are the values of ri, ri2, ri3 affected by delete statement?
         //the memory that ri2 and ri3 are referencing is deallocated and ri and ri2 reference the same address
         //while ri3 points somewhere different
@@ -337,9 +332,9 @@ int main()
 
     // [5.4] delete individual rows (i.e. rows are int arrays, use delete [])
     //for(// ...) // ...
-    for (int i = 0; i < hw08::TIC_TAC_TOE_SIZE; i++) {
-        delete p_p_tictactoe[i];
-    }
+    // for (int i = 0; i < hw08::TIC_TAC_TOE_SIZE; i++) {
+    //     delete p_p_tictactoe[i];
+    // }
     delete[] p_p_tictactoe;
     // [5.5] delete board (board is an array of int pointers, use delete [])
     // ...
