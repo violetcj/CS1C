@@ -2,10 +2,10 @@
 // to illustrate pointers, pointer arithmetic & dynamic memory
 
 /*************************************************************************
- * AUTHOR     : First Last
+ * AUTHOR     : CJ Carroll
  * HW08       : pointers, pointer arithmetic & dynamic memory
  * CLASS      : CS 1C
- * SECTION    : Date & Time
+ * SECTION    : 7/8/21
 *************************************************************************/
 
 #include <iostream>

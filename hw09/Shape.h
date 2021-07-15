@@ -6,6 +6,10 @@ using namespace std;
 
 class Shape {
 public:
+
+    //virtual deconstructor
+    virtual ~Shape(){};
+
     //pure virtual function
     virtual int calcPerimeter() = 0;
 

@@ -1,0 +1,275 @@
+Script started on Wed 14 Jul 2021 12:55:29 PM PDT
+No command 'expert' found, did you mean:
+ Command 'expect' from package 'expect' (universe)
+expert: command not found
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/CS1C/hw08[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/CS1C/hw08 $[00m date
+Wed Jul 14 12:55:34 PDT 2021
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/CS1C/hw08[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/CS1C/hw08 $[00m ls -l
+total 20
+-rw-r--r-- 1 cs1c cs1c 14364 Jul 14 11:00 hw08.cpp
+-rw-rw-r-- 1 cs1c cs1c     0 Jul 14 12:55 hw08.scr
+-rw-r--r-- 1 cs1c cs1c   188 Jul 14 10:58 Makefile
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/CS1C/hw08[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/CS1C/hw08 $[00m n[Kmake all
+g++     hw08.cpp   -o hw08
+][01m[Khw08.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[Khw08.cpp:322:55:[m[K [01;35m[Kwarning: [m[Kextended initializer lists only available with -std=c++11 or -std=gnu++11
+     p_p_tictactoe[0] = new int[hw08::TIC_TAC_TOE_SIZE]{ 1, 0, 0 };  // [5.1] ro
+[01;32m[K                                                       ^[m[K
+[01m[Khw08.cpp:323:55:[m[K [01;35m[Kwarning: [m[Kextended initializer lists only available with -std=c++11 or -std=gnu++11
+     p_p_tictactoe[1] = new int[hw08::TIC_TAC_TOE_SIZE]{ 0, 1, 0 };   // [5.2] r
+[01;32m[K                                                       ^[m[K
+[01m[Khw08.cpp:324:55:[m[K [01;35m[Kwarning: [m[Kextended initializer lists only available with -std=c++11 or -std=gnu++11
+     p_p_tictactoe[2] = new int[hw08::TIC_TAC_TOE_SIZE]{ 0, 0, 1 };   // [5.3] r
+[01;32m[K                                                       ^[m[K
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/CS1C/hw08[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/CS1C/hw08 $[00m ][Kmake all[3Pls -l
+total 36
+-rwxrwxr-x 1 cs1c cs1c 14448 Jul 14 12:55 [0m[01;32mhw08[0m
+-rw-r--r-- 1 cs1c cs1c 14364 Jul 14 11:00 hw08.cpp
+-rw-rw-r-- 1 cs1c cs1c     0 Jul 14 12:55 hw08.scr
+-rw-r--r-- 1 cs1c cs1c   188 Jul 14 10:58 Makefile
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/CS1C/hw08[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/CS1C/hw08 $[00m valgf[Krind ./hw08
+==7398== Memcheck, a memory error detector
+==7398== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==7398== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==7398== Command: ./hw08
+==7398== 
+
+************************************** 
+*           Running HW08             * 
+*      Programmed by CJ Carroll      * 
+*      CS1C 7/8/21 3:00-5:20         * 
+************************************** 
+
+increment pointer vs reference
+
+100
+105
+100
+25
+26
+100
+101
+5
+print array of doubles forward and backward
+
+==7398== Conditional jump or move depends on uninitialised value(s)
+==7398==    at 0x520C6D8: __printf_fp_l (printf_fp.c:381)
+==7398==    by 0x520B0C8: vfprintf (vfprintf.c:1631)
+==7398==    by 0x5232A58: vsnprintf (vsnprintf.c:114)
+==7398==    by 0x4F0EF5B: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F3DA56: std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, double) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F3DD6F: std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, double) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F49FC4: std::ostream& std::ostream::_M_insert<double>(double) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x401231: main (in /home/cs1c/Desktop/HW - CS1C/CS1C/hw08/hw08)
+==7398== 
+==7398== Conditional jump or move depends on uninitialised value(s)
+==7398==    at 0x520C6F2: __printf_fp_l (printf_fp.c:395)
+==7398==    by 0x520B0C8: vfprintf (vfprintf.c:1631)
+==7398==    by 0x5232A58: vsnprintf (vsnprintf.c:114)
+==7398==    by 0x4F0EF5B: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F3DA56: std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, double) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F3DD6F: std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, double) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F49FC4: std::ostream& std::ostream::_M_insert<double>(double) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x401231: main (in /home/cs1c/Desktop/HW - CS1C/CS1C/hw08/hw08)
+==7398== 
+==7398== Conditional jump or move depends on uninitialised value(s)
+==7398==    at 0x5206070: __mpn_extract_double (dbl2mpn.c:56)
+==7398==    by 0x520C721: __printf_fp_l (printf_fp.c:411)
+==7398==    by 0x520B0C8: vfprintf (vfprintf.c:1631)
+==7398==    by 0x5232A58: vsnprintf (vsnprintf.c:114)
+==7398==    by 0x4F0EF5B: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F3DA56: std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, double) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F3DD6F: std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, double) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F49FC4: std::ostream& std::ostream::_M_insert<double>(double) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x401231: main (in /home/cs1c/Desktop/HW - CS1C/CS1C/hw08/hw08)
+==7398== 
+==7398== Conditional jump or move depends on uninitialised value(s)
+==7398==    at 0x5206075: __mpn_extract_double (dbl2mpn.c:60)
+==7398==    by 0x520C721: __printf_fp_l (printf_fp.c:411)
+==7398==    by 0x520B0C8: vfprintf (vfprintf.c:1631)
+==7398==    by 0x5232A58: vsnprintf (vsnprintf.c:114)
+==7398==    by 0x4F0EF5B: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F3DA56: std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, double) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F3DD6F: std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, double) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F49FC4: std::ostream& std::ostream::_M_insert<double>(double) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x401231: main (in /home/cs1c/Desktop/HW - CS1C/CS1C/hw08/hw08)
+==7398== 
+==7398== Conditional jump or move depends on uninitialised value(s)
+==7398==    at 0x520D3C8: __printf_fp_l (printf_fp.c:959)
+==7398==    by 0x520B0C8: vfprintf (vfprintf.c:1631)
+==7398==    by 0x5232A58: vsnprintf (vsnprintf.c:114)
+==7398==    by 0x4F0EF5B: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F3DA56: std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, double) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F3DD6F: std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, double) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F49FC4: std::ostream& std::ostream::_M_insert<double>(double) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x401231: main (in /home/cs1c/Desktop/HW - CS1C/CS1C/hw08/hw08)
+==7398== 
+==7398== Conditional jump or move depends on uninitialised value(s)
+==7398==    at 0x520D3EB: __printf_fp_l (printf_fp.c:962)
+==7398==    by 0x520B0C8: vfprintf (vfprintf.c:1631)
+==7398==    by 0x5232A58: vsnprintf (vsnprintf.c:114)
+==7398==    by 0x4F0EF5B: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F3DA56: std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, double) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F3DD6F: std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, double) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F49FC4: std::ostream& std::ostream::_M_insert<double>(double) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x401231: main (in /home/cs1c/Desktop/HW - CS1C/CS1C/hw08/hw08)
+==7398== 
+==7398== Conditional jump or move depends on uninitialised value(s)
+==7398==    at 0x520D81A: __printf_fp_l (printf_fp.c:972)
+==7398==    by 0x520B0C8: vfprintf (vfprintf.c:1631)
+==7398==    by 0x5232A58: vsnprintf (vsnprintf.c:114)
+==7398==    by 0x4F0EF5B: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F3DA56: std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, double) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F3DD6F: std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, double) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F49FC4: std::ostream& std::ostream::_M_insert<double>(double) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x401231: main (in /home/cs1c/Desktop/HW - CS1C/CS1C/hw08/hw08)
+==7398== 
+==7398== Conditional jump or move depends on uninitialised value(s)
+==7398==    at 0x520D82E: __printf_fp_l (printf_fp.c:972)
+==7398==    by 0x520B0C8: vfprintf (vfprintf.c:1631)
+==7398==    by 0x5232A58: vsnprintf (vsnprintf.c:114)
+==7398==    by 0x4F0EF5B: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F3DA56: std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, double) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F3DD6F: std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, double) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F49FC4: std::ostream& std::ostream::_M_insert<double>(double) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x401231: main (in /home/cs1c/Desktop/HW - CS1C/CS1C/hw08/hw08)
+==7398== 
+==7398== Conditional jump or move depends on uninitialised value(s)
+==7398==    at 0x520DA9B: round_away (rounding-mode.h:52)
+==7398==    by 0x520DA9B: __printf_fp_l (printf_fp.c:979)
+==7398==    by 0x520B0C8: vfprintf (vfprintf.c:1631)
+==7398==    by 0x5232A58: vsnprintf (vsnprintf.c:114)
+==7398==    by 0x4F0EF5B: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F3DA56: std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, double) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F3DD6F: std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, double) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F49FC4: std::ostream& std::ostream::_M_insert<double>(double) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x401231: main (in /home/cs1c/Desktop/HW - CS1C/CS1C/hw08/hw08)
+==7398== 
+==7398== Conditional jump or move depends on uninitialised value(s)
+==7398==    at 0x520D462: __printf_fp_l (printf_fp.c:1078)
+==7398==    by 0x520B0C8: vfprintf (vfprintf.c:1631)
+==7398==    by 0x5232A58: vsnprintf (vsnprintf.c:114)
+==7398==    by 0x4F0EF5B: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F3DA56: std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, double) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F3DD6F: std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, double) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F49FC4: std::ostream& std::ostream::_M_insert<double>(double) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x401231: main (in /home/cs1c/Desktop/HW - CS1C/CS1C/hw08/hw08)
+==7398== 
+==7398== Conditional jump or move depends on uninitialised value(s)
+==7398==    at 0x520D56F: __printf_fp_l (printf_fp.c:1147)
+==7398==    by 0x520B0C8: vfprintf (vfprintf.c:1631)
+==7398==    by 0x5232A58: vsnprintf (vsnprintf.c:114)
+==7398==    by 0x4F0EF5B: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F3DA56: std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, double) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F3DD6F: std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, double) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F49FC4: std::ostream& std::ostream::_M_insert<double>(double) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x401231: main (in /home/cs1c/Desktop/HW - CS1C/CS1C/hw08/hw08)
+==7398== 
+==7398== Conditional jump or move depends on uninitialised value(s)
+==7398==    at 0x520D846: __printf_fp_l (printf_fp.c:1154)
+==7398==    by 0x520B0C8: vfprintf (vfprintf.c:1631)
+==7398==    by 0x5232A58: vsnprintf (vsnprintf.c:114)
+==7398==    by 0x4F0EF5B: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F3DA56: std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, double) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F3DD6F: std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, double) const (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x4F49FC4: std::ostream& std::ostream::_M_insert<double>(double) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==7398==    by 0x401231: main (in /home/cs1c/Desktop/HW - CS1C/CS1C/hw08/hw08)
+==7398== 
+0
+0
+5
+0
+0
+3
+0
+4
+0
+0
+
+
+0
+0
+4
+0
+3
+0
+0
+5
+0
+0
+
+pointers point to the same element of the array
+
+print 2d array of doubles
+
+1 2 3 4 5 
+6 7 8 9 10 
+11 12 13 14 15 
+16 17 18 19 20 
+21 22 23 24 25 
+
+1 2 3 4 5 
+6 7 8 9 10 
+11 12 13 14 15 
+16 17 18 19 20 
+21 22 23 24 25 
+
+
+ri, ri2, ri3 before delete
+
+100
+200
+0x5ab7110
+
+ri, ri2, ri3 after delete
+
+==7398== Invalid read of size 4
+==7398==    at 0x4015B8: main (in /home/cs1c/Desktop/HW - CS1C/CS1C/hw08/hw08)
+==7398==  Address 0x5ab70c0 is 0 bytes inside a block of size 4 free'd
+==7398==    at 0x4C2F24B: operator delete(void*) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7398==    by 0x401559: main (in /home/cs1c/Desktop/HW - CS1C/CS1C/hw08/hw08)
+==7398==  Block was alloc'd at
+==7398==    at 0x4C2E0EF: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7398==    by 0x4013CB: main (in /home/cs1c/Desktop/HW - CS1C/CS1C/hw08/hw08)
+==7398== 
+100
+==7398== Invalid read of size 4
+==7398==    at 0x4015DA: main (in /home/cs1c/Desktop/HW - CS1C/CS1C/hw08/hw08)
+==7398==  Address 0x5ab7110 is 0 bytes inside a block of size 20 free'd
+==7398==    at 0x4C2F74B: operator delete[](void*) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7398==    by 0x40157A: main (in /home/cs1c/Desktop/HW - CS1C/CS1C/hw08/hw08)
+==7398==  Block was alloc'd at
+==7398==    at 0x4C2E80F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7398==    by 0x4013DC: main (in /home/cs1c/Desktop/HW - CS1C/CS1C/hw08/hw08)
+==7398== 
+200
+0x5ab7110
+
+1 0 0 
+0 1 0 
+0 0 1 
+
+1 0 0 
+0 1 0 
+0 0 1 
+
+==7398== 
+==7398== HEAP SUMMARY:
+==7398==     in use at exit: 72,800 bytes in 5 blocks
+==7398==   total heap usage: 12 allocs, 7 frees, 82,000 bytes allocated
+==7398== 
+==7398== LEAK SUMMARY:
+==7398==    definitely lost: 96 bytes in 4 blocks
+==7398==    indirectly lost: 0 bytes in 0 blocks
+==7398==      possibly lost: 0 bytes in 0 blocks
+==7398==    still reachable: 72,704 bytes in 1 blocks
+==7398==         suppressed: 0 bytes in 0 blocks
+==7398== Rerun with --leak-check=full to see details of leaked memory
+==7398== 
+==7398== For counts of detected and suppressed errors, rerun with: -v
+==7398== Use --track-origins=yes to see where uninitialised values come from
+==7398== ERROR SUMMARY: 226 errors from 14 contexts (suppressed: 0 from 0)
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/CS1C/hw08[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/CS1C/hw08 $[00m exit
+exit
+
+Script done on Wed 14 Jul 2021 12:56:13 PM PDT
