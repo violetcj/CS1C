@@ -37,7 +37,7 @@ public:
      * Post: Returns an int value resembling the perimeter of the values length
      * and width
      **************************************************************************/
-    int calcPerimeter() override { return ((2*length) + (2*width)); }
+    int calcPerimeter() { return ((2*length) + (2*width)); }
     /**********************************************************************
      * calcArea
      *
@@ -48,7 +48,7 @@ public:
      * Pre: initialized length and width
      * Post: returns double type value equal to area of length and width
      **********************************************************************/
-    double calcArea() override { return length*width; }
+    double calcArea() { return length*width; }
     /*************************************************************
      * setLength
      *

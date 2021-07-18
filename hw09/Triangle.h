@@ -37,7 +37,7 @@ public:
      * Pre: base, height, hyp
      * Post: all values added together
      ********************************************************************/
-    int calcPerimeter() override { return base+height+hyp; }
+    int calcPerimeter() { return base+height+hyp; }
     /*
      * calcArea
      *
@@ -48,7 +48,7 @@ public:
      * Pre: base, height
      * Post: base and height values multiplied together and by 0.5
      *******************************************************************/
-    double calcArea() override { return 0.5*base*height; }
+    double calcArea() { return 0.5*base*height; }
     /*******************************************************************
      * setBase
      *
