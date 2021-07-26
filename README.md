@@ -1,2 +1,1 @@
-CS1C
-Scotts Dog is Gay
+HW CS1C Saddleback College 2021
