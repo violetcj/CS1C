@@ -1,6 +1,6 @@
 /**********************************
  * Name: CJ Carroll
- * Assignment 12: Queue(Template)
+ * Assignment 13: Exceptions
  * Class: CS1C
  * Section: 7/22/21; M-Th 3:00-5:20
  **********************************/
@@ -264,7 +264,6 @@ int main() {
 
     }
     cout << "Continuing program. . ." << endl;
-
     cout << "Trying to add an element to a full queue, utilizing ExceptionQueueIsFull" << endl;
     try {
         intQ.enqueue(MAX_SIZE);
