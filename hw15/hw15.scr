@@ -1,0 +1,76 @@
+Script started on Tue 27 Jul 2021 08:42:23 PM PDT
+No command 'expert' found, did you mean:
+ Command 'expect' from package 'expect' (universe)
+expert: command not found
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hwAgain/CS1C/hw15[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hwAgain/CS1C/hw15 $[00m date
+Tue Jul 27 20:42:27 PDT 2021
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hwAgain/CS1C/hw15[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hwAgain/CS1C/hw15 $[00m ls -l
+total 16
+-rw-rw-r-- 1 cs1c cs1c 11714 Jul 27 20:41 hw15.cpp
+-rw-rw-r-- 1 cs1c cs1c     0 Jul 27 20:42 hw15.scr
+-rw-rw-r-- 1 cs1c cs1c   179 Jul 27 17:44 Makefile
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hwAgain/CS1C/hw15[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hwAgain/CS1C/hw15 $[00m make all
+g++ -std=c++17 -Wall -g  hw15.cpp -o hw15 
+hw15.cpp: In instantiation of ‘[01m[Khw15::Link<Elem>::Link(const Elem&, hw15::Link<Elem>*, hw15::Link<Elem>*) [with Elem = int][m[K’:
+[01m[Khw15.cpp:50:53:[m[K   required from ‘[01m[Khw15::list<Elem>::list() [with Elem = int][m[K’
+[01m[Khw15.cpp:272:15:[m[K   required from here
+[01m[Khw15.cpp:37:14:[m[K [01;35m[Kwarning: [m[K‘[01m[Khw15::Link<int>::val[m[K’ will be initialized after [-Wreorder]
+         Elem val;     // the value
+[01;32m[K              ^[m[K
+[01m[Khw15.cpp:35:15:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Khw15::Link<int>* hw15::Link<int>::prev[m[K’ [-Wreorder]
+         Link *prev;    // previous link
+[01;32m[K               ^[m[K
+[01m[Khw15.cpp:38:9:[m[K [01;35m[Kwarning: [m[K  when initialized here [-Wreorder]
+         Link(const Elem &v = Elem(), Link *p = 0, Link *s = 0) : val{v}, prev{p
+[01;32m[K         ^[m[K
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hwAgain/CS1C/hw15[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hwAgain/CS1C/hw15 $[00m ;s [K[K[Kls -l
+total 88
+-rwxrwxr-x 1 cs1c cs1c 71384 Jul 27 20:42 [0m[01;32mhw15[0m
+-rw-rw-r-- 1 cs1c cs1c 11714 Jul 27 20:41 hw15.cpp
+-rw-rw-r-- 1 cs1c cs1c     0 Jul 27 20:42 hw15.scr
+-rw-rw-r-- 1 cs1c cs1c   179 Jul 27 17:44 Makefile
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hwAgain/CS1C/hw15[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hwAgain/CS1C/hw15 $[00m val;[Kgrind ./hw15
+==11241== Memcheck, a memory error detector
+==11241== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==11241== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==11241== Command: ./hw15
+==11241== 
+
+************************************** 
+*           Running HW15             * 
+*      Programmed by CJ Carroll      * 
+*         CS1C 7/27/21 3:00-5:20     * 
+************************************** 
+
+2 -6 5 -99 q `
+
+low_doubles alg: double array min value is -99.25
+
+low_doubles alg: double vector min value first half is 1
+low_doubles alg: double vector min value second half is -99.25
+
+low alg: double array min value is -99.25
+
+low alg: double vector min value first half is 1
+low alg: double vector min value second half is -99.25
+
+low alg: the lowest value in the list is -99
+==11241== 
+==11241== HEAP SUMMARY:
+==11241==     in use at exit: 72,704 bytes in 1 blocks
+==11241==   total heap usage: 9 allocs, 8 frees, 74,952 bytes allocated
+==11241== 
+==11241== LEAK SUMMARY:
+==11241==    definitely lost: 0 bytes in 0 blocks
+==11241==    indirectly lost: 0 bytes in 0 blocks
+==11241==      possibly lost: 0 bytes in 0 blocks
+==11241==    still reachable: 72,704 bytes in 1 blocks
+==11241==         suppressed: 0 bytes in 0 blocks
+==11241== Rerun with --leak-check=full to see details of leaked memory
+==11241== 
+==11241== For counts of detected and suppressed errors, rerun with: -v
+==11241== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hwAgain/CS1C/hw15[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hwAgain/CS1C/hw15 $[00m exit
+exit
+
+Script done on Tue 27 Jul 2021 08:43:19 PM PDT
