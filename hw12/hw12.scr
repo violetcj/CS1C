@@ -1,0 +1,173 @@
+Script started on Thu 22 Jul 2021 09:56:31 PM PDT
+No command 'expert' found, did you mean:
+ Command 'expect' from package 'expect' (universe)
+expert: command not found
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/CS1C/hw12[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/CS1C/hw12 $[00m date
+Thu Jul 22 21:56:34 PDT 2021
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/CS1C/hw12[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/CS1C/hw12 $[00m ls -l
+total 16
+-rwxrwx--- 1 cs1c cs1c 8297 Jul 22 21:54 [0m[01;32mhw12.cpp[0m
+-rw-rw-r-- 1 cs1c cs1c    0 Jul 22 21:56 hw12.scr
+-rw-rw-r-- 1 cs1c cs1c  188 Jul 22 21:51 Makefile
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/CS1C/hw12[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/CS1C/hw12 $[00m make all
+g++ -std=c++14 -Wall -g  hw12.cpp -o hw12 
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/CS1C/hw12[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/CS1C/hw12 $[00m ls -l
+total 176
+-rwxrwxr-x 1 cs1c cs1c 163096 Jul 22 21:56 [0m[01;32mhw12[0m
+-rwxrwx--- 1 cs1c cs1c   8297 Jul 22 21:54 [01;32mhw12.cpp[0m
+-rw-rw-r-- 1 cs1c cs1c      0 Jul 22 21:56 hw12.scr
+-rw-rw-r-- 1 cs1c cs1c    188 Jul 22 21:51 Makefile
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/CS1C/hw12[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/CS1C/hw12 $[00m valgrind ./hw12
+==4354== Memcheck, a memory error detector
+==4354== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==4354== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==4354== Command: ./hw12
+==4354== 
+Testing isEmpty on numQ
+Queue is empty
+
+
+Adding values to double queue
+
+
+Filling int queue
+
+Filling string queue with a couple of values* NOT FULLY*
+Printing str, int, and double queues
+Int: 
+Queue #1: 0
+Queue #2: 1
+Queue #3: 2
+Queue #4: 3
+Queue #5: 4
+Queue #6: 5
+Queue #7: 6
+Queue #8: 7
+Queue #9: 8
+Queue #10: 9
+Queue #11: 10
+Queue #12: 11
+Queue #13: 12
+Queue #14: 13
+Queue #15: 14
+Queue #16: 15
+Queue #17: 16
+Queue #18: 17
+Queue #19: 18
+Queue #20: 19
+Queue #21: 20
+Queue #22: 21
+Queue #23: 22
+Queue #24: 23
+Queue #25: 24
+
+String: 
+Queue #1: Hello
+Queue #2: World
+Queue #3: Sweet
+
+Double
+Queue #1: 9
+Queue #2: 15.25
+Queue #3: 98.2
+Queue #4: 0.002
+Queue #5: 55
+Queue #6: 1.233
+Queue #7: 4.56
+Copying integer based queue
+Copy CTR invoked
+
+Printing copied Queue
+Queue #1: 0
+Queue #2: 1
+Queue #3: 2
+Queue #4: 3
+Queue #5: 4
+Queue #6: 5
+Queue #7: 6
+Queue #8: 7
+Queue #9: 8
+Queue #10: 9
+Queue #11: 10
+Queue #12: 11
+Queue #13: 12
+Queue #14: 13
+Queue #15: 14
+Queue #16: 15
+Queue #17: 16
+Queue #18: 17
+Queue #19: 18
+Queue #20: 19
+Queue #21: 20
+Queue #22: 21
+Queue #23: 22
+Queue #24: 23
+Queue #25: 24
+Testing isEmpty on copyNum
+Queue is not empty
+
+Printing partially filled string queue and demo isFull
+The string queue is not full
+
+Queue #1: Hello
+Queue #2: World
+Queue #3: Sweet
+
+Grabbing size of both copied int queue and string queue
+Int Queue: 25
+String Queue: 3
+Popping two elements from copyNum Queue
+Printing updated copyNum Queue
+Queue #1: 2
+Queue #2: 3
+Queue #3: 4
+Queue #4: 5
+Queue #5: 6
+Queue #6: 7
+Queue #7: 8
+Queue #8: 9
+Queue #9: 10
+Queue #10: 11
+Queue #11: 12
+Queue #12: 13
+Queue #13: 14
+Queue #14: 15
+Queue #15: 16
+Queue #16: 17
+Queue #17: 18
+Queue #18: 19
+Queue #19: 20
+Queue #20: 21
+Queue #21: 22
+Queue #22: 23
+Queue #23: 23
+
+Testing assignment operator
+
+Printing assignment queue
+Queue #1: Hello
+Queue #2: World
+Queue #3: Sweet
+
+Testing front member function
+strQ: Hello
+copyNum: 2
+==4354== 
+==4354== HEAP SUMMARY:
+==4354==     in use at exit: 72,704 bytes in 1 blocks
+==4354==   total heap usage: 8 allocs, 7 frees, 76,552 bytes allocated
+==4354== 
+==4354== LEAK SUMMARY:
+==4354==    definitely lost: 0 bytes in 0 blocks
+==4354==    indirectly lost: 0 bytes in 0 blocks
+==4354==      possibly lost: 0 bytes in 0 blocks
+==4354==    still reachable: 72,704 bytes in 1 blocks
+==4354==         suppressed: 0 bytes in 0 blocks
+==4354== Rerun with --leak-check=full to see details of leaked memory
+==4354== 
+==4354== For counts of detected and suppressed errors, rerun with: -v
+==4354== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW - CS1C/CS1C/hw12[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW - CS1C/CS1C/hw12 $[00m exit
+exit
+
+Script done on Thu 22 Jul 2021 09:56:51 PM PDT
