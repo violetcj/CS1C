@@ -31,29 +31,26 @@ namespace hw15 {
 //------------------------------------------------------------------------------
 
     template<typename Elem>
-    struct Link
-    {
-        Link* prev;    // previous link
-        Link* succ;    // successor (next) link
-        Elem  val;     // the value
-        Link(const Elem& v = Elem(), Link* p = 0, Link* s = 0) : val{v}, prev{p}, succ{s} { }
+    struct Link {
+        Link *prev;    // previous link
+        Link *succ;    // successor (next) link
+        Elem val;     // the value
+        Link(const Elem &v = Elem(), Link *p = 0, Link *s = 0) : val{v}, prev{p}, succ{s} {}
     };
 
 //--Q#3-------------------------------------------------------------------------
 
     template<typename Elem>
-    class list
-    {
+    class list {
         // representation and implementation details
     public:
         class iterator;         // forward declaration of member type: class iterator
         class const_iterator;   // forward declaration of member type: class const_iterator
 
-        list() : first(new Link<Elem>()), last{first} { }
-        ~list()
-        {
-            while (first != last)
-            {
+        list() : first(new Link<Elem>()), last{first} {}
+
+        ~list() {
+            while (first != last) {
                 Link<Elem> *next = first->succ;
                 delete first;
                 first = next;
@@ -69,19 +66,19 @@ namespace hw15 {
         const_iterator cbegin() const;  // constant iterator to first element
         const_iterator cend() const;    // constant iterator to one beyond last element
 
-        iterator insert(iterator p, const Elem& v); // insert v into list after p
+        iterator insert(iterator p, const Elem &v); // insert v into list after p
         iterator erase(iterator p);                 // remove p from the list
 
-        void push_back(const Elem& v);  // insert v at end
-        void push_front(const Elem& v); // insert v at front
+        void push_back(const Elem &v);  // insert v at end
+        void push_front(const Elem &v); // insert v at front
         void pop_front();   // remove the first element
         void pop_back();    // remove the last element
 
-        Elem& front();      // the first element
-        Elem& back();       // the last element
+        Elem &front();      // the first element
+        Elem &back();       // the last element
 
-        Link<Elem>* first;
-        Link<Elem>* last;   // one-beyond-the-last link
+        Link<Elem> *first;
+        Link<Elem> *last;   // one-beyond-the-last link
     };
 
 //--Q#4-------------------------------------------------------------------------
@@ -89,42 +86,42 @@ namespace hw15 {
     template<typename Elem>
     class list<Elem>::iterator // definition for class iterator
     {
-        Link<Elem>* curr;   // current node
+        Link<Elem> *curr;   // current node
     public:
-        iterator(Link<Elem>* p) : curr{p} { }
+        iterator(Link<Elem> *p) : curr{p} {}
 
         /*points to the next element*/
-        iterator& operator++() // forward
+        iterator &operator++() // forward
         {
             curr = curr->succ;
             return *this;
         }
 
         /*points to the previous element*/
-        iterator& operator--() // backwards
+        iterator &operator--() // backwards
         {
             curr = curr->prev;
             return *this;
         }
 
         /*gets value of current pointed to element*/
-        Elem& operator*() // get value (dereference)
+        Elem &operator*() // get value (dereference)
         {
             return curr->val;
         }
 
         /*returns true if rhs curr and curr point to the same element and
         will return false if not*/
-        bool operator==(const iterator& rhs) const // lhs, rhs iterators point to the same node (equal)
+        bool operator==(const iterator &rhs) const // lhs, rhs iterators point to the same node (equal)
         {
-            return curr==rhs.curr;
+            return curr == rhs.curr;
         }
 
         /*returns true if rhs curr and curr dont point to the same element
         and will return false if they do*/
-        bool operator!=(const iterator& rhs) const // lhs, rhs iterators do not point to the same node (not equal)
+        bool operator!=(const iterator &rhs) const // lhs, rhs iterators do not point to the same node (not equal)
         {
-            return curr!=rhs.curr;
+            return curr != rhs.curr;
         }
     };
 
@@ -133,40 +130,40 @@ namespace hw15 {
     template<typename Elem>
     class list<Elem>::const_iterator // definition for class const_iterator
     {
-        const Link<Elem>* curr;   // current node
+        const Link<Elem> *curr;   // current node
         // node pointed to by curr is immutable (i.e. can't be changed)
         // fine to modify curr pointer itself (i.e. pointer value stored in curr)
         // refer to const correctness reading
     public:
-        const_iterator(Link<Elem>* p) : curr(p){}
+        const_iterator(Link<Elem> *p) : curr(p) {}
 
         /*points to the next element*/
-        const_iterator& operator++() {
+        const_iterator &operator++() {
             curr = curr->succ;
             return *this;
         }
 
         /*points to the previous element*/
-        const_iterator& operator--(){
+        const_iterator &operator--() {
             curr = curr->prev;
             return *this;
         }
 
         /*gets value of current pointed to element*/
-        const_iterator& operator*(){
+        const_iterator &operator*() const {
             return curr->val;
         }
 
         /*returns true if rhs curr and curr point to the same element and
         will return false if not*/
-        bool operator==(const const_iterator& rhs) const {
-            return curr==rhs.curr;
+        bool operator==(const const_iterator &rhs) const {
+            return curr == rhs.curr;
         }
 
         /*returns true if rhs curr and curr dont point to the same element
         and will return false if they do*/
-        bool operator!=(const const_iterator& rhs) const{
-            return curr!=rhs.curr;
+        bool operator!=(const const_iterator &rhs) const {
+            return curr != rhs.curr;
         }
 
     };
@@ -206,9 +203,9 @@ namespace hw15 {
 //------------------------------------------------------------------------------
 
     template<typename Elem>
-    void list<Elem>::push_front(const Elem& v) // insert v at front
+    void list<Elem>::push_front(const Elem &v) // insert v at front
     {
-        first = new Link<Elem>(v,0,first);
+        first = new Link<Elem>(v, 0, first);
     }
 
 //
@@ -218,13 +215,16 @@ namespace hw15 {
 
 //--Q#5-------------------------------------------------------------------------
 
-    double* low_doubles(double* first, double* last)
+    double *low_doubles(double *first, double *last)
     // return a pointer to the element in [first,last) that has the lowest value
     {
-        double l = -1;
-        double* low;
-        for(double* p = first; p!=last; ++p)
-            if (*p < l) { low = p; l = *p; }
+        double l = 1000;
+        double *low;
+        for (double *p = first; p != last; ++p)
+            if (*p < l) {
+                low = p;
+                l = *p;
+            }
         return low;
     }
 
@@ -232,16 +232,15 @@ namespace hw15 {
 
 // implement templated low algorithm here
 
-template<typename Iterator>
-Iterator low(Iterator first, Iterator last){
-    Iterator low = first;
-    for(Iterator i = first; i!=last; ++i){
-        if(*i < *low) {
-            low = i;
-        }
+    template<typename Iterator>
+    Iterator low(Iterator first, Iterator last) {
+        Iterator low = first;
+        for (Iterator i = first; i != last; ++i)
+            if (*i < *low) low = i;
+        return low;
     }
-    return low;
-}
+
+
 
 //------------------------------------------------------------------------------
 
@@ -272,6 +271,7 @@ int main()
 
     list<int> myList;
     int x;
+
     while (cin >> x) myList.push_front(x);
 
     // Q#5 - low_doubles algorithm
