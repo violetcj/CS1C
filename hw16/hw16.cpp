@@ -2,10 +2,10 @@
 // to illustrate stl algorithms & function objects
 
 /*************************************************************************
- * AUTHOR     : First Last
+ * AUTHOR     : CJ Carroll
  * hw16       : stl algorithms & function objects
  * CLASS      : CS 1C
- * SECTION    : Date & Time
+ * SECTION    : 07/29/21 3:00-5:20 PM
 *************************************************************************/
 
 #include <iostream>
@@ -213,8 +213,8 @@ int main()
 	cout << endl;
 	cout << "************************************** " << endl;
 	cout << "*            Running hw16            * " << endl;
-	cout << "*      Programmed by First Last      * " << endl;
-	cout << "*          CS1C Date & Time          * " << endl;
+	cout << "*      Programmed by CJ Carroll      * " << endl;
+	cout << "*          CS1C 7/29/21 3-5:20 PM    * " << endl;
 	cout << "************************************** " << endl;
 	cout << endl;
 

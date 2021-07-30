@@ -340,4 +340,12 @@ int main()
  */
 
 // Q#5
+/*
+ * With the algorithms they are templated which lets them be used with any type while the low_doubles contains 
+ * local variables, which limits greatly how the function can do things compared to low algorithm and can cause 
+ * errors if the correct data isn't used.
+ * The low_double and low functions are similar as they will find the lowest value in the array that is passed 
+ * in and they are different because low is a template so it can take in most types of datat while the low_doubles 
+ * can only take in values of type double. 
+ */
 
