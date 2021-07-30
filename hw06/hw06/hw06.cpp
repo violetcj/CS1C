@@ -30,6 +30,10 @@ post: string modified to reverse elements between the two
 	  ints, one being the first element to be modified, the other 
 	  being the last element in the range modified
 *********************************************************************************/
+
+///Testing Doxygen with this thing. 
+///
+///This is the detailed description
 int reverse(string& str, int first, int last) {
 
 	if (first == last) {
